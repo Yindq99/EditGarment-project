@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+
+  <title>EditGarment: An Instruction-Based Garment Editing Dataset Constructed with Automated MLLM Synthesis and
+    Semantic-Aware Evaluation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/EditGarment Logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h2 class="title is-2 publication-title">EditGarment: An Instruction-Based Garment Editing Dataset
+              Constructed with Automated MLLM Synthesis and Semantic-Aware Evaluation</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">Deqiang Yin</a><sup>1</sup><sup>*</sup>,</span>
+                <span class="author-block">Junyi Guo</a><sup>1</sup><sup>*</sup>,</span>
+                <span class="author-block">Huanda Lu</a><sup>2</sup>,</span>
+                <span class="author-block">Fangyu Wu</a><sup>1</sup><sup>†</sup>,</span>
+                <span class="author-block">Dongming Lu</a><sup>3</sup>,</span>
+
+              </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Xi’an Jiaotong-Liverpool University <sup>2</sup>NingboTech
+                  University <sup>3</sup>Zhejiang University<br>ACM MM 2025</span>
+                <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution <sup>†</sup>Corresponding
+                    Author</small></span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span> -->
+
+                  <!-- huggingface link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/yindq99/EditGarment" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Data</span>
+                    </a>
+                  </span>
+
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container">
+      <div class="hero-body">
+        <img src="static/images/teaser.png" alt="alt text" style="width: 100%; object-fit: cover; max-width:100%;"></a>
+        <h2 class="subtitle has-text-centered">
+          Example images and edit instructions from EditGarment
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <section class="section">
+    <div class="container">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Instruction-based garment editing enables precise image modifications via natural language, with broad
+              applications in fashion design and customization. Unlike general editing tasks, it requires understanding
+              garment-specific semantics and attribute dependencies. However, progress is limited by the scarcity of
+              high-quality instruction–image pairs, as manual annotation is costly and hard to scale. While MLLMs have
+              shown promise in automated data synthesis, their application to garment editing is constrained by
+              imprecise instruction modeling and a lack of fashion-specific supervisory signals. To address these
+              challenges, we present an automated pipeline for constructing a garment editing dataset. We first define
+              six editing instruction categories aligned with real-world fashion workflows to guide the generation of
+              balanced and diverse instruction–image triplets. Second, we introduce Fashion Edit Score, a
+              semantic-aware evaluation metric that captures semantic dependencies between garment attributes and
+              provides reliable supervision during construction. Using this pipeline, we construct a total of 52,257
+              candidate triplets and retain 20,596 high-quality triplets to build EditGarment, the first
+              instruction-based dataset tailored to standalone garment editing.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--/ Abstract. -->
+
+
+
+  <section class="section">
+    <div class="container">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">EditGarment Construction Pipeline</h2>
+          <div class="content has-text-justified">
+            <img class="center" src="static/images/FlowChart.jpg" width="100%">
+            <p>
+              <strong style="font-weight: 900">Pipeline Overview.</strong>
+              Our dataset construction pipeline contains part (a): first, we apply Qwen-VL to generate editing triplets
+              regarding our predefined editing categories; and part (b): second, we design a dependency graph structure
+              to quantitatively evaluate the quality of generated data. The semantic dependency graph in the second part
+              illustrates a visualization of our proposed graph structure. Data scored above the predefined threshold
+              will be collected into our EditGarment dataset.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+  <section class="section">
+    <div class="container">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Qualitative Conparison</h2>
+          <div class="content has-text-justified">
+            <img class="center" src="static/images/qualitative conparison.png" width="100%">
+            <p>
+              Qualitative comparison between pre-trained IP2P and IP2P fine-tuned on our dataset (both complete
+              dataset and the version without evaluation) in six editing categories. Green boxes indicate sub-optimal
+              editing results, and red boxes refer to accurate editing results.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+
+        <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+        </iframe>
+
+      </div>
+    </div>
+  </section> -->
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
